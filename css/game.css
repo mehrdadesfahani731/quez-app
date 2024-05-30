@@ -1,0 +1,118 @@
+#loader{
+    width: 100px;
+    height: 100px;
+    border: 7px solid #6757d9;
+    border-bottom-color:transparent;
+    border-top-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+   animation:rotation 1.5s linear infinite  ;
+
+
+
+}
+
+@keyframes rotation{
+0%{
+    transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+}
+}
+.container{
+display: none;
+width: 700px;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+.header p{
+    color: #6757d9;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.header div{
+    display: flex;
+    align-items: center;
+}
+.header span{
+    display: inline-block;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #6757d9;
+    border-radius: 4px;
+
+
+
+}
+#Question-box{
+    display: flex;
+    flex-direction: column;
+    
+}
+h3{
+    background-color: #6757d9;
+    color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 60px 0 20px;
+}
+.answer-text{
+    background-color: #fff;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-align: left;
+    border: 2px solid #fff;
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+.answer-text:hover{
+    background-color: #eeedfb;
+    border: 2px solid #fff;
+}
+#finish-button ,
+#next-button{
+color: #6757d9;
+font-size: 1.5rem;
+background-color: #eeedfb;
+border: 2px solid #6757d9;
+border-radius: 15px;
+padding: 8px 15px;
+margin: 20px 20px 0 0;
+cursor: pointer;
+transition: all .2s ease-in;
+}
+#finish-button:hover ,
+#next-button:hover{
+    background-color: #6757d9;
+    color: #fff;
+
+}
+
+.correct{
+    background-color: #5bd7bc;
+}
+.incorrect{
+    background-color: #fe6681;
+    
+}
+.correct:hover{
+    background-color: #5bd7bc;
+}
+.incorrect:hover{
+    background-color: #fe6681;
+}
